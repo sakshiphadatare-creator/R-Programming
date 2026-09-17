@@ -1,15 +1,15 @@
 # String concatenation
-str1 = "Hello"
-str2 = "World"
+str1 <- "Hello"
+str2 <- "World"
 
-result = cat(str1, str2, sep ="")   # Without space
-result = cat(str1, str2, " ")    # With space
+result <- cat(str1, str2, sep ="")   # Without space
+result <- cat(str1, str2, " ")    # With space
 
 # Case conversion
-str = "program"
+str <- "program"
 cat("String in uppercase: ",toupper(str))
 
-str_ = "PROGRAM"
+str_ <- "PROGRAM"
 cat("string in lowercase: ",tolower(str_))
 
 # String length
@@ -80,16 +80,16 @@ cat("Reversed string:", result)   # olleH
 
 ##Summary
 
-1. Connect two string : cat(var1, var2, sep="")
-2. Convert string into uppercase : toupper(str)
-3. Convert string into lowercase : tolower(str)
-4. Find length of the string : nchar(str)
-5. Substring : substr(str, start, end)
-6. Replace Part of a String : sub(old, new, str)
-7. Search for a Word : grepl(word, str)
-8. Split a String : strsplit(str, " ")
-9. Remove Extra Spaces : trimws(str) 
+1. Connect two string -> cat(var1, var2, sep="")
+2. Convert string into uppercase -> toupper(str)
+3. Convert string into lowercase -> tolower(str)
+4. Find length of the string -> nchar(str)
+5. Substring -> substr(str, start, end)
+6. Replace Part of a String -> sub(old, new, str)
+7. Search for a Word -> grepl(word, str)
+8. Split a String -> strsplit(str, " ")
+9. Remove Extra Spaces -> trimws(str) 
    trimws() is used to remove extra spaces from the beginning and end of a string.
-10. comparison : if-else and == operator
-11. Reverse : rev(characters)
+10. comparison -> if-else and == operator
+11. Reverse -> rev(characters)
     collapse is an argument used mainly with paste() and paste0() to combine multiple elements into one single string.
