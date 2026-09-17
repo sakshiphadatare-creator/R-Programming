@@ -6,12 +6,13 @@ This repository contains my R programming practice programs and basic problem-so
 
 1. Hello World
 2. Large and Positive Number
-3. Swap Two Numbers
-4. Armstrong Number
-5. Leap Year
-6. Perfect Number
-7. Count Even, Odd and Zero Digits
-8. Multiplication Table
+3. Sum of Digits
+4. Swap Two Numbers
+5. Armstrong Number
+6. Leap Year
+7. Perfect Number
+8. Count Even, Odd and Zero Digits
+9. Multiplication Table
 
 ## Skills Practiced
 
