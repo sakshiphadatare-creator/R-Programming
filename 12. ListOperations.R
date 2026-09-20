@@ -94,38 +94,37 @@ print(is.list(List))                 # FALSE
 # Display Structure of a List
 str(student)
 
-# 
 ## Summary
 
-# 1. Create and display a list: list()
-# 2. Create a named list: list(name = value)
-# 3. Access an element: list_name[[index]] or list_name$name
-# 4. Access multiple elements: list_name[index]
-# 5. Find length of a list: length()
-# 6. Add an element: list_name[[index]] <- value
-# 7. Modify an element: list_name[[index]] <- new_value
-# 8. Remove an element: list_name[[index]] <- NULL
-# 9. Combine two lists: c(list1, list2)
-# 10. Check whether an element exists: %in%
-# 11. Find names of list elements: names()
-# 12. Rename list elements: names(list_name) <- c(...)
-# 13. Remove names: names(list_name) <- NULL
-# 14. Convert list to vector: unlist()
-# 15. Check whether an object is a list: is.list()
-# 16. Display the structure of a list: str()
+1. Create and display a list: list()
+2. Create a named list: list(name = value)
+3. Access an element: list_name[[index]] or list_name$name
+4. Access multiple elements: list_name[index]
+5. Find length of a list: length()
+6. Add an element: list_name[[index]] <- value
+7. Modify an element: list_name[[index]] <- new_value
+8. Remove an element: list_name[[index]] <- NULL
+9. Combine two lists: c(list1, list2)
+10. Check whether an element exists: %in%
+11. Find names of list elements: names()
+12. Rename list elements: names(list_name) <- c(...)
+13. Remove names: names(list_name) <- NULL
+14. Convert list to vector: unlist()
+15. Check whether an object is a list: is.list()
+16. Display the structure of a list: str()
 
 
 ## Important Notes
 
-# 1. A list can store different types of data.
-# 2. list() is used to create a list.
-# 3. [[ ]] is used to access a single element.
-# 4. [ ] is used to access one or more elements as a list.
-# 5. $ is used to access named elements.
-# 6. length() returns the number of elements in a list.
-# 7. names() returns the names of list elements.
-# 8. c() is used to combine lists.
-# 9. unlist() converts a list into a vector.
-# 10. is.list() checks whether an object is a list.
-# 11. str() displays the structure of a list.
-# 12. NULL is used to remove an element from a list.
+1. A list can store different types of data.
+2. list() is used to create a list.
+3. [[ ]] is used to access a single element.
+4. [ ] is used to access one or more elements as a list.
+5. $ is used to access named elements.
+6. length() returns the number of elements in a list.
+7. names() returns the names of list elements.
+8. c() is used to combine lists.
+9. unlist() converts a list into a vector.
+10. is.list() checks whether an object is a list.
+11. str() displays the structure of a list.
+12. NULL is used to remove an element from a list.
