@@ -1,15 +1,15 @@
 # String concatenation
-str1 <- "Hello"
-str2 <- "World"
+str1 = "Hello"
+str2 = "World"
 
-result <- cat(str1, str2, sep ="")   # Without space
-result <- cat(str1, str2, " ")    # With space
+result = cat(str1, str2, sep ="")   # Without space
+result = cat(str1, str2, " ")    # With space
 
 # Case conversion
-str <- "program"
+str = "program"
 cat("String in uppercase: ",toupper(str))
 
-str_ <- "PROGRAM"
+str_ = "PROGRAM"
 cat("string in lowercase: ",tolower(str_))
 
 # String length
@@ -19,7 +19,8 @@ age <- as.numeric(readline(prompt= "Enter the age: "))     # 20
 print(paste("I'm",user_input,",","I am",age,"year olds")) 
 
 # Display the length of the string.
-length <- cat("The length of the string: ",nchar(user_input))    # 6
+string_length <- cat("The length of the string: ",nchar(user_input))    # 6
+cat("The length of the string:", string_length)
 
 # Extract a Substring
 str <- readline("Enter a string: ")                         # Hello World
@@ -57,7 +58,7 @@ cat("Separated words:\n",result[[1]])       # "R" "is" "easy"
 str <-"   R is easy.  "
 
 result <- trimws(str)                          
-cat("String after removing extra spaces:", result).  # R is easy. 
+cat("String after removing extra spaces:", result)  # R is easy. 
 
 # Compare Two Strings
 str1 <- readline("Enter first string: ")     # "Indira"
@@ -78,18 +79,22 @@ result <- paste(rev(characters), collapse = "")
 cat("Reversed string:", result)   # olleH
 
 
-##Summary
+## Summary
 
-1. Connect two string -> cat(var1, var2, sep="")
-2. Convert string into uppercase -> toupper(str)
-3. Convert string into lowercase -> tolower(str)
-4. Find length of the string -> nchar(str)
-5. Substring -> substr(str, start, end)
-6. Replace Part of a String -> sub(old, new, str)
-7. Search for a Word -> grepl(word, str)
-8. Split a String -> strsplit(str, " ")
-9. Remove Extra Spaces -> trimws(str) 
-   trimws() is used to remove extra spaces from the beginning and end of a string.
-10. comparison -> if-else and == operator
-11. Reverse -> rev(characters)
-    collapse is an argument used mainly with paste() and paste0() to combine multiple elements into one single string.
+1. String Concatenation: paste(str1, str2, sep = "")
+2. Convert to Uppercase: toupper(str)
+3. Convert to Lowercase: tolower(str)
+4. Find String Length: nchar(str)
+5. Extract Substring: substr(str, start, end)
+6. Replace Part of a String: sub(old, new, str)
+7. Search for a Word: grepl(word, str)
+8. Split a String: strsplit(str, " ")
+9. Remove Extra Spaces: trimws(str)
+10. Compare Two Strings: == operator with if-else
+11. Reverse a String: strsplit(), rev(), paste(), collapse = ""
+
+# Note:
+# trimws() removes extra spaces from the beginning and end of a string.
+# collapse is used with paste() or paste0() to combine multiple elements
+# into one single string.
+
