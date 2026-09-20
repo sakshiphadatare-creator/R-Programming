@@ -95,7 +95,35 @@ print(is.list(List))                 # FALSE
 str(student)
 
 ## Examples
-# Create a vector
+# 1. Create a list of employees
+employees <- list("Rahul", "Swati", "Kunal", "Shreya")
+ 
+# Give names to the employees in the list
+names(employees) <- c("Emp101", "Emp102", "Emp103", "Emp104")
+ 
+cat("Original Employee List:\n")
+print(employees)
+ 
+# Add a new employee at the end of the list
+employees[[length(employees) + 1]] <- "Tanmay"
+names(employees)[length(employees)] <- "Emp105"
+ 
+cat("\nAfter Adding a New Employee:\n")
+print(employees)
+ 
+# Remove the third employee
+employees[[3]] <- NULL
+ 
+cat("\nAfter Removing the Third Employee:\n")
+print(employees)
+ 
+# Update the first employee's name
+employees[[1]] <- "Vaishnavi"
+ 
+cat("\nAfter Updating the First Employee's Name:\n")
+print(employees)
+ 
+# 2. Create a vector
 student_marks <- c(85, 90, 78)
  
 # Create a matrix
@@ -119,7 +147,7 @@ my_list[[2]][1,2] <- NA
 cat("\nList After Removing Matrix Element (1,2):\n")
 print(my_list)
  
-# Create a nested list containing multiple employees
+# 3. Create a nested list containing multiple employees
 employees <- list(
  
  Employee101 = list(
