@@ -94,6 +94,82 @@ print(is.list(List))                 # FALSE
 # Display Structure of a List
 str(student)
 
+## Examples
+# Create a vector
+student_marks <- c(85, 90, 78)
+ 
+# Create a matrix
+student_matrix <- matrix(c(101, 102, 103,
+                          20, 21, 22),
+                        nrow = 3,
+                        byrow = FALSE)
+ 
+# Create a list
+student_details <- list("Aarav", "BCA", TRUE)
+ 
+# Create the main list
+my_list <- list(student_marks, student_matrix, student_details)
+ 
+cat("Original List:\n")
+print(my_list)
+ 
+# Remove the matrix element at (1,2)
+my_list[[2]][1,2] <- NA
+ 
+cat("\nList After Removing Matrix Element (1,2):\n")
+print(my_list)
+ 
+# Create a nested list containing multiple employees
+employees <- list(
+ 
+ Employee101 = list(
+   EmpID = 101,
+   Name = "Aarav",
+   Age = 28,
+   Department = "IT",
+   Salary = 45000,
+   City = "Pune"
+ ),
+ 
+ Employee102 = list(
+   EmpID = 102,
+   Name = "Diya",
+   Age = 26,
+   Department = "HR",
+   Salary = 40000,
+   City = "Mumbai"
+ ),
+ 
+ Employee103 = list(
+   EmpID = 103,
+   Name = "Vivaan",
+   Age = 30,
+   Department = "Finance",
+   Salary = 48000,
+   City = "Nashik"
+ )
+)
+ 
+# Display the nested list
+cat("Employee Details:\n")
+print(employees)
+ 
+# Access the department of Employee102
+cat("\nDepartment of Employee102:\n")
+cat(employees$Employee102$Department)
+ 
+# Update the salary of Employee103
+employees$Employee103$Salary <- 55000
+ 
+cat("\n\nAfter Updating Salary of Employee103:\n")
+print(employees)
+ 
+# Add a new field "Experience" to Employee101
+employees$Employee101$Experience <- "4 Years"
+ 
+cat("\nAfter Adding Experience to Employee101:\n")
+print(employees)
+
 ## Summary
 
 1. Create and display a list: list()
