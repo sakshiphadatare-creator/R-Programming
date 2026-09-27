@@ -42,7 +42,7 @@ This repository contains my R programming practicals and implementations complet
 - GitHub
 
 ## 📁 Repository Structure
-
+```text
 R-Programming/
 │
 ├── 01. HelloWorld.R
@@ -63,7 +63,7 @@ R-Programming/
 ├── .gitignore
 └── README.md
 This repository contains my R programming practice programs and basic problem-solving exercises.
-
+```
 ## Future Learning
 
 I will continue adding programs related to:
